@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* =================== Jost =================== */
+
+@font-face {
+    font-family: 'Jost';
+    src: local('ß'), url('fonts/Jost/Jost-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* =================== Jost =================== */
+
+/* =================== Muller =================== */
+
+@font-face {
+    font-family: 'Muller';
+    src: local('ß'), url('fonts/Muller/MullerBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('ß'), url('fonts/Muller/MullerRegular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* =================== Muller =================== */
+
+/* =================== Roboto =================== */
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('ß'), url('fonts/Roboto/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* =================== Roboto =================== */

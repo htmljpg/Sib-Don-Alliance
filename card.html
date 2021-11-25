@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Карточка</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="_fonts.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="page">
+            <div class="page__row page__row--wrapper">
+                <div class="page__cell page__cell--fluid">
+                    <div class="page__row page__row--top in-pc">
+                        <div class="page__cell">
+                            <div class="top">
+                                <nav class="top__nav">
+                                    <ul class="top__nav-menu">
+                                        <li class="top__nav-item">
+                                            <a class="top__nav-link" href="#">О компании</a>
+                                        </li>
+                                        <li class="top__nav-item">
+                                            <a class="top__nav-link" href="#">Оплата</a>
+                                        </li>
+                                        <li class="top__nav-item">
+                                            <a class="top__nav-link" href="#">Доставка</a>
+                                        </li>
+                                        <li class="top__nav-item">
+                                            <a class="top__nav-link" href="#">Вопрос-ответ</a>
+                                        </li>
+                                        <li class="top__nav-item">
+                                            <a class="top__nav-link" href="#">Отзывы</a>
+                                        </li>
+                                        <li class="top__nav-item">
+                                            <a class="top__nav-link" href="#">Акции</a>
+                                        </li>
+                                        <li class="top__nav-item">
+                                            <a class="top__nav-link" href="#">Контакты</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="top__auth">
+                                    <a class="top__auth-link" href="#">Вход</a>
+                                    <a class="top__auth-link" href="#">Регистрация</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__row page__row--header">
+                        <div class="page__cell">
+                            <header class="header">
+                                <div class="header__brand">
+                                    <a class="brand" href="#">
+                                        <span class="brand__title bold">СибДон Альянс</span>
+                                    </a>
+                                </div>
+                                <div class="header__search">
+                                    <div class="search">
+                                        <form class="search__form" action="#">
+                                            <div class="search__wrapper">
+                                                <input class="search__input" type="text" placeholder="Поиск по названию">
+                                                <button class="search__btn bold" type="submit">Найти</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="header__contact in-pc">
+                                    <div class="contact">
+                                        <p class="contact__tel">
+                                            <a class="contact__link bold" href="tel:+380988111165">+38 098 811-11-65</a>
+                                        </p>
+                                        <p class="contact__time">
+                                            <span class="contact__span">с 10 до 19 без выходных</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="header__icons">
+                                    <a class="header__icon header__icon--tel in-mobile-flex" href="tel:+380988111165">
+                                        <img alt="cart" class="header__icon-picture header__icon-picture--tel" src="img/svg/tel-3.svg">
+                                    </a>
+                                    <a class="header__icon header__icon--cart" href="#">
+                                        <span class="header__icon-picture-wrapper">
+                                            <img alt="cart" class="header__icon-picture header__icon-picture--cart" src="img/svg/cart.svg">
+                                            <span class="header__icon-number">0</span>
+                                        </span>
+                                        <span class="header__icon-text in-pc">корзина</span>
+                                    </a>
+                                    <button class="header__icon header__icon--hamburger in-mobile-flex" data-target="#nav">
+                                        <img class="header__icon-picture header__icon-picture--hamburger" src="img/svg/hamburger.svg" alt="hamburger">
+                                    </button>
+                                </div>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="page__row page__row--nav">
+                        <div class="page__cell">
+                            <nav class="nav" id="nav">
+                                <div class="nav__wrapper">
+                                    <div class="nav__hidden in-mobile">
+                                        <div class="nav__auth">
+                                            <a class="nav__auth-link" href="#">
+                                                <span class="nav__auth-s">Вход</span>
+                                            </a>
+                                            <a class="nav__auth-link" href="#">
+                                                <span class="nav__auth-s">Регистрация</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <button class="nav__btn active in-mobile" data-target=".nav__menu-wrapper">
+                                        <img class="nav__btn-hamburger" src="img/svg/hamburger2.svg" alt="Каталог продукции">
+                                        <span class="nav__btn-span">Каталог продукции</span>
+                                    </button>
+                                    <div class="nav__menu-wrapper">
+                                        <ul class="nav__menu">
+                                            <li class="nav__item">
+                                                <a href="#" class="nav__link nav__link--active nav__link--dropdown">
+                                                    <span class="nav__span nav__span--dropdown">Ворота</span>
+                                                </a>
+                                                <span class="nav__arrow nav-arrow-toggle nav-arrow-toggle--primary" data-target=".nav__dropdown"></span>
+                                                <div class="nav__dropdown">
+                                                    <div class="dropdown">
+                                                        <ul class="dropdown__menu">
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link dropdown__link--dropdown" href="#">Автоматика для откатных ворот</a>
+                                                                <span class="dropdown__arrow nav-arrow-toggle nav-arrow-toggle--secondary" data-target=".nav__dropdown"></span>
+                                                                <div class="nav__dropdown nav__dropdown--sub">
+                                                                    <div class="dropdown">
+                                                                        <ul class="dropdown__menu">
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для откатных ворот</a>
+                                                                            </li>
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для распашных ворот</a>
+                                                                            </li>
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для распашных ворот</a>
+                                                                            </li>
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для промышленых ворот</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link" href="#">Автоматика для распашных ворот</a>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link" href="#">Автоматика для распашных ворот</a>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link" href="#">Автоматика для промышленых ворот</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a href="#" class="nav__link nav__link--dropdown">
+                                                    <span class="nav__span nav__span--dropdown">Рольставни</span>
+                                                </a>
+                                                <span class="nav__arrow nav-arrow-toggle nav-arrow-toggle--primary" data-target=".nav__dropdown"></span>
+                                                <div class="nav__dropdown">
+                                                    <div class="dropdown">
+                                                        <ul class="dropdown__menu">
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link" href="#">Автоматика для откатных ворот</a>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link" href="#">Автоматика для распашных ворот</a>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link" href="#">Автоматика для распашных ворот</a>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link" href="#">Автоматика для промышленых ворот</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a href="#" class="nav__link nav__link--dropdown">
+                                                    <span class="nav__span nav__span--dropdown">Шлагбауны</span>
+                                                </a>
+                                                <span class="nav__arrow nav-arrow-toggle nav-arrow-toggle--primary" data-target=".nav__dropdown"></span>
+                                                <div class="nav__dropdown">
+                                                    <div class="dropdown">
+                                                        <ul class="dropdown__menu">
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link" href="#">Автоматика для откатных ворот</a>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link" href="#">Автоматика для распашных ворот</a>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link" href="#">Автоматика для распашных ворот</a>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link" href="#">Автоматика для промышленых ворот</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a href="#" class="nav__link nav__link--dropdown">
+                                                    <span class="nav__span nav__span--dropdown">Автоматика для ворот</span>
+                                                </a>
+                                                <span class="nav__arrow nav-arrow-toggle nav-arrow-toggle--primary" data-target=".nav__dropdown"></span>
+                                                <div class="nav__dropdown">
+                                                    <div class="dropdown">
+                                                        <ul class="dropdown__menu">
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link dropdown__link--dropdown" href="#">Автоматика для откатных ворот</a>
+                                                                <span class="dropdown__arrow nav-arrow-toggle nav-arrow-toggle--secondary" data-target=".nav__dropdown"></span>
+                                                                <div class="nav__dropdown nav__dropdown--sub">
+                                                                    <div class="dropdown">
+                                                                        <ul class="dropdown__menu">
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для откатных ворот</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link dropdown__link--dropdown" href="#">Автоматика для распашных ворот</a>
+                                                                <span class="dropdown__arrow nav-arrow-toggle nav-arrow-toggle--secondary" data-target=".nav__dropdown"></span>
+                                                                <div class="nav__dropdown nav__dropdown--sub">
+                                                                    <div class="dropdown">
+                                                                        <ul class="dropdown__menu">
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для откатных ворот</a>
+                                                                            </li>
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для распашных ворот</a>
+                                                                            </li>
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для распашных ворот</a>
+                                                                            </li>
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для промышленых ворот</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link dropdown__link--dropdown" href="#">Автоматика для распашных ворот</a>
+                                                                <div class="nav__dropdown nav__dropdown--sub">
+                                                                    <div class="dropdown">
+                                                                        <ul class="dropdown__menu">
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для откатных ворот</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link dropdown__link--dropdown" href="#">Автоматика для промышленых ворот</a>
+                                                                <span class="dropdown__arrow nav-arrow-toggle nav-arrow-toggle--secondary" data-target=".nav__dropdown"></span>
+                                                                <div class="nav__dropdown nav__dropdown--sub">
+                                                                    <div class="dropdown">
+                                                                        <ul class="dropdown__menu">
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для откатных ворот</a>
+                                                                            </li>
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для откатных ворот</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a href="#" class="nav__link nav__link--dropdown">
+                                                    <span class="nav__span nav__span--dropdown">Комплектующие для ворот</span>
+                                                </a>
+                                                <span class="nav__arrow nav-arrow-toggle nav-arrow-toggle--primary" data-target=".nav__dropdown"></span>
+                                                <div class="nav__dropdown">
+                                                    <div class="dropdown">
+                                                        <ul class="dropdown__menu">
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link dropdown__link--dropdown" href="#">Автоматика для откатных ворот</a>
+                                                                <span class="dropdown__arrow nav-arrow-toggle nav-arrow-toggle--secondary" data-target=".nav__dropdown"></span>
+                                                                <div class="nav__dropdown nav__dropdown--sub">
+                                                                    <div class="dropdown">
+                                                                        <ul class="dropdown__menu">
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для откатных ворот</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link" href="#">Автоматика для распашных ворот</a>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link dropdown__link--dropdown" href="#">Автоматика для распашных ворот</a>
+                                                                <span class="dropdown__arrow nav-arrow-toggle nav-arrow-toggle--secondary" data-target=".nav__dropdown"></span>
+                                                                <div class="nav__dropdown nav__dropdown--sub">
+                                                                    <div class="dropdown">
+                                                                        <ul class="dropdown__menu">
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для откатных ворот</a>
+                                                                            </li>
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для распашных ворот</a>
+                                                                            </li>
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для распашных ворот</a>
+                                                                            </li>
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для промышленых ворот</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="dropdown__item">
+                                                                <a class="dropdown__link dropdown__link--dropdown" href="#">Автоматика для промышленых ворот</a>
+                                                                <span class="dropdown__arrow nav-arrow-toggle nav-arrow-toggle--secondary" data-target=".nav__dropdown"></span>
+                                                                <div class="nav__dropdown nav__dropdown--sub">
+                                                                    <div class="dropdown">
+                                                                        <ul class="dropdown__menu">
+                                                                            <li class="dropdown__item">
+                                                                                <a class="dropdown__link" href="#">Автоматика для откатных ворот</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a href="#" class="nav__link">
+                                                    <span class="nav__span">Ремонт</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav__item">
+                                                <a href="#" class="nav__link">
+                                                    <span class="nav__span">Наши работы</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav__item nav__item--hidden nav__item--white in-mobile">
+                                                <a href="#" class="nav__link nav__link--white">
+                                                    <span class="nav__span">О компании</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav__item nav__item--hidden nav__item--white in-mobile">
+                                                <a href="#" class="nav__link nav__link--white">
+                                                    <span class="nav__span">Оплата</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav__item nav__item--hidden nav__item--white in-mobile">
+                                                <a href="#" class="nav__link nav__link--white">
+                                                    <span class="nav__span">Доставка</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav__item nav__item--hidden nav__item--white in-mobile">
+                                                <a href="#" class="nav__link nav__link--white">
+                                                    <span class="nav__span">Вопрос-ответ</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav__item nav__item--hidden nav__item--white in-mobile">
+                                                <a href="#" class="nav__link nav__link--white">
+                                                    <span class="nav__span">Отзывы</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav__item nav__item--hidden nav__item--white in-mobile">
+                                                <a href="#" class="nav__link nav__link--white">
+                                                    <span class="nav__span">Акции</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav__item nav__item--hidden nav__item--white in-mobile">
+                                                <a href="#" class="nav__link nav__link--white">
+                                                    <span class="nav__span">Контакты</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav__hidden in-mobile">
+                                        <div class="nav__contact">
+                                            <div class="contact">
+                                                <p class="contact__tel">
+                                                    <a class="contact__link bold" href="tel:+380988111165">+38 098 811-11-65</a>
+                                                </p>
+                                                <p class="contact__time">
+                                                    <span class="contact__span">с 10 до 19 без выходных</span>
+                                                </p>
+                                                <a class="contact__btn btn btn--default btn--md btn--shadow" href="#">Обратный звонок</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                            <span class="overlay" data-target="#nav"></span>
+                        </div>
+                    </div>
+                    <div class="page__row page__row--headline page__row--shadow">
+                        <div class="page__cell">
+                            <div class="top-block">
+                                <div class="top-block__wrapper">
+                                    <div class="top-block__left">
+                                        <div class="breadcrumbs">
+                                            <ul class="breadcrumbs__items">
+                                                <li class="breadcrumbs__item">
+                                                    <a href="#" class="breadcrumbs__link">Главная</a>
+                                                </li>
+                                                <li class="breadcrumbs__item">
+                                                    <a href="#" class="breadcrumbs__link">Каталог</a>
+                                                </li>
+                                                <li class="breadcrumbs__item">
+                                                    <span class="breadcrumbs__span">Гаражные секционные ворота серии Alutech Prestige 1750x2625</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="top-block__right">
+                                        <div class="top-block__text in-mobile">
+                                            <h4 class="top-block__title bold">Гаражные секционные ворота серии Alutech Prestige 1750x2625</h4>
+                                        </div>
+                                        <div class="top-block__icons">
+                                            <a class="top-block__icon" href="#">
+                                                <img class="top-block__icon-picture top-block__icon-picture--favorite" src="img/svg/favorite-2.svg" alt="favorite">
+                                            </a>
+                                            <a class="top-block__icon" href="#">
+                                                <img class="top-block__icon-picture top-block__icon-picture--bookmarks" src="img/svg/bookmarks-2.svg" alt="bookmarks">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__row page__row--gray">
+                        <div class="page__cell">
+                            <div class="card">
+                                <div class="card__row">
+                                    <div class="card__cell card__cell--image">
+                                        <div class="card__image-wrapper">
+                                            <div class="card__image">
+                                                <div class="card__image-wrapper">
+                                                    <div class="swiper-container swiper-container--card-image">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <a class="card__image-link" href="pic/card-1.jpg" data-fancybox="card-image">
+                                                                    <img class="card__image-picture" src="pic/card-1.jpg" alt="Гаражные секционные ворота серии Alutech Prestige 1750x2625">
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a class="card__image-link" href="pic/card-1.jpg" data-fancybox="card-image">
+                                                                    <img class="card__image-picture" src="pic/card-1.jpg" alt="Гаражные секционные ворота серии Alutech Prestige 1750x2625">
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a class="card__image-link" href="pic/card-1.jpg" data-fancybox="card-image">
+                                                                    <img class="card__image-picture" src="pic/card-1.jpg" alt="Гаражные секционные ворота серии Alutech Prestige 1750x2625">
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a class="card__image-link" href="pic/card-1.jpg" data-fancybox="card-image">
+                                                                    <img class="card__image-picture" src="pic/card-1.jpg" alt="Гаражные секционные ворота серии Alutech Prestige 1750x2625">
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a class="card__image-link" href="pic/card-1.jpg" data-fancybox="card-image">
+                                                                    <img class="card__image-picture" src="pic/card-1.jpg" alt="Гаражные секционные ворота серии Alutech Prestige 1750x2625">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="disc disc--gray disc--card-image in-mobile-flex" id="disc-card-image"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card__thumbnail in-pc">
+                                                <div class="card__thumbnail-wrapper">
+                                                    <div class="swiper-container swiper-container--card-thumbnail">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <div class="card__thumbnail-item">
+                                                                    <button class="card__thumbnail-button">
+                                                                        <img class="card__thumbnail-picture" src="pic/thumbnail-1.jpg" alt="thumbnail">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="card__thumbnail-item">
+                                                                    <button class="card__thumbnail-button">
+                                                                        <img class="card__thumbnail-picture" src="pic/thumbnail-1.jpg" alt="thumbnail">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="card__thumbnail-item">
+                                                                    <button class="card__thumbnail-button">
+                                                                        <img class="card__thumbnail-picture" src="pic/thumbnail-1.jpg" alt="thumbnail">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="card__thumbnail-item">
+                                                                    <button class="card__thumbnail-button">
+                                                                        <img class="card__thumbnail-picture" src="pic/thumbnail-1.jpg" alt="thumbnail">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="card__thumbnail-item">
+                                                                    <button class="card__thumbnail-button">
+                                                                        <img class="card__thumbnail-picture" src="pic/thumbnail-1.jpg" alt="thumbnail">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <div class="card__thumbnail-item">
+                                                                    <button class="card__thumbnail-button">
+                                                                        <img class="card__thumbnail-picture" src="pic/thumbnail-1.jpg" alt="thumbnail">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__thumbnail-arrow card__thumbnail-arrow--next"></div>
+                                                        <div class="card__thumbnail-arrow card__thumbnail-arrow--prev"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__cell card__cell--content">
+                                        <h3 class="card__title title title--h3 in-pc">Гаражные секционные ворота <br>серии Alutech Prestige 1750x2625</h3>
+                                        <div class="card__content">
+                                            <div class="card__data">
+                                                <ul class="card__data-items">
+                                                    <li class="card__data-item visible">
+                                                        <span class="card__data-span">Ширина проема</span>
+                                                        <span class="card__data-span">2750</span>
+                                                    </li>
+                                                    <li class="card__data-item visible">
+                                                        <span class="card__data-span">Высота проема</span>
+                                                        <span class="card__data-span">2750</span>
+                                                    </li>
+                                                    <li class="card__data-item visible">
+                                                        <span class="card__data-span">Страна производства</span>
+                                                        <span class="card__data-span">Германия</span>
+                                                    </li>
+                                                    <li class="card__data-item visible">
+                                                        <span class="card__data-span">Тип:</span>
+                                                        <span class="card__data-span">Hormann RenoMatic</span>
+                                                    </li>
+                                                    <li class="card__data-item visible">
+                                                        <span class="card__data-span">Акция:</span>
+                                                        <span class="card__data-span">Участвуют</span>
+                                                    </li>
+                                                    <li class="card__data-item visible">
+                                                        <span class="card__data-span">Артикул</span>
+                                                        <span class="card__data-span">89230</span>
+                                                    </li>
+                                                    <li class="card__data-item visible">
+                                                        <span class="card__data-span">Габариты (ДхШхВ)</span>
+                                                        <span class="card__data-span">5000×700×500 мм</span>
+                                                    </li>
+                                                    <li class="card__data-item visible">
+                                                        <span class="card__data-span">Производитель</span>
+                                                        <span class="card__data-span">
+                                                            <img class="card__data-picture" src="pic/alutech.png" alt="alutech">
+                                                        </span>
+                                                    </li>
+                                                    <li class="card__data-item">
+                                                        <span class="card__data-span">Ширина проема</span>
+                                                        <span class="card__data-span">2750</span>
+                                                    </li>
+                                                    <li class="card__data-item">
+                                                        <span class="card__data-span">Высота проема</span>
+                                                        <span class="card__data-span">2750</span>
+                                                    </li>
+                                                    <li class="card__data-item">
+                                                        <span class="card__data-span">Страна производства</span>
+                                                        <span class="card__data-span">Германия</span>
+                                                    </li>
+                                                    <li class="card__data-item">
+                                                        <span class="card__data-span">Тип:</span>
+                                                        <span class="card__data-span">Hormann RenoMatic</span>
+                                                    </li>
+                                                    <li class="card__data-item">
+                                                        <span class="card__data-span">Акция:</span>
+                                                        <span class="card__data-span">Участвуют</span>
+                                                    </li>
+                                                    <li class="card__data-item">
+                                                        <span class="card__data-span">Артикул</span>
+                                                        <span class="card__data-span">89230</span>
+                                                    </li>
+                                                    <li class="card__data-item">
+                                                        <span class="card__data-span">Габариты (ДхШхВ)</span>
+                                                        <span class="card__data-span">5000×700×500 мм</span>
+                                                    </li>
+                                                    <li class="card__data-item">
+                                                        <span class="card__data-span">Производитель</span>
+                                                        <span class="card__data-span">
+                                                            <img class="card__data-picture" src="pic/alutech.png" alt="alutech">
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <button class="card__data-show" id="show">Все характеристики и состав комплекта</button>
+                                            </div>
+                                            <div class="card__box">
+                                                <div class="card__box-wrapper">
+                                                    <div class="card__box-row card__box-row--top">
+                                                        <div class="card__box-cell card__box-cell--price">
+                                                            <span class="card__price bold">57 324 руб</span>
+                                                        </div>
+                                                        <div class="card__box-cell card__box-cell--delivery">
+                                                            <p class="card__delivery bold">Доставка: 450 руб</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__box-row">
+                                                        <div class="card__box-cell card__box-cell--quantity">
+                                                            <div class="quantity">
+                                                                <div class="quantity__row">
+                                                                    <div class="quantity__cell quantity__cell--button">
+                                                                        <button class="quantity__button quantity__button--minus">-</button>
+                                                                    </div>
+                                                                    <div class="quantity__cell quantity__cell--input">
+                                                                        <input class="quantity__input" type="text" value="1">
+                                                                    </div>
+                                                                    <div class="quantity__cell quantity__cell--button">
+                                                                        <button class="quantity__button quantity__button--plus">+</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__box-cell card__box-cell--buttons">
+                                                            <div class="card__buttons">
+                                                                <div class="card__button-btn">
+                                                                    <a class="btn btn--default btn--md btn--shadow btn--fluid" href="#">В корзину</a>
+                                                                </div>
+                                                                <div class="card__button-btn">
+                                                                    <a class="btn btn btn--fifth btn--md btn--shadow btn--fluid" href="#">Купить в 1 клик</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs">
+                                    <ul class="tabs__caption">
+                                        <li class="tabs__headline tabs__headline--active">
+                                            <span class="tabs__headline-span">ОПИСАНИЕ</span>
+                                        </li>
+                                        <li class="tabs__headline">
+                                            <span class="tabs__headline-span">ХАРАКТЕРИСТИКИ</span>
+                                        </li>
+                                        <li class="tabs__headline">
+                                            <span class="tabs__headline-span">Отзывов (0)</span>
+                                        </li>
+                                        <li class="tabs__headline">
+                                            <span class="tabs__headline-span">Вопрос-ответ</span>
+                                        </li>
+                                        <li class="tabs__headline">
+                                            <span class="tabs__headline-span">Связанные новости</span>
+                                        </li>
+                                    </ul>
+                                    <div class="tabs__items">
+                                        <div class="tabs__item tabs__item--active">
+                                            <button class="tabs__button toggle toggle--up" data-target=".tabs__inner">
+                                                <span class="tabs__button-span">ОПИСАНИЕ</span>
+                                            </button>
+                                            <div class="tabs__inner">
+                                                <div class="tabs__content">
+                                                    <p class="text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском<br> языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали<br> небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет<br> сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                                                    <p class="text">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках<br> прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый<br> колорит советских времен.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__item">
+                                            <button class="tabs__button toggle toggle--up" data-target=".tabs__inner">
+                                                <span class="tabs__button-span">ХАРАКТЕРИСТИКИ</span>
+                                            </button>
+                                            <div class="tabs__inner">
+                                                <div class="tabs__content">
+                                                    <p class="text">ХАРАКТЕРИСТИКИ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__item">
+                                            <button class="tabs__button toggle toggle--up" data-target=".tabs__inner">
+                                                <span class="tabs__button-span">Отзывы (0)</span>
+                                            </button>
+                                            <div class="tabs__inner">
+                                                <div class="tabs__content">
+                                                    <p class="text">Отзывы (0)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__item">
+                                            <button class="tabs__button toggle toggle--up" data-target=".tabs__inner">
+                                                <span class="tabs__button-span">Вопрос-ответ</span>
+                                            </button>
+                                            <div class="tabs__inner">
+                                                <div class="tabs__content">
+                                                    <p class="text">Вопрос-ответ </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__item">
+                                            <button class="tabs__button toggle toggle--up" data-target=".tabs__inner">
+                                                <span class="tabs__button-span">Связанные новости</span>
+                                            </button>
+                                            <div class="tabs__inner">
+                                                <div class="tabs__content">
+                                                    <p class="text">Связанные новости</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__row page__row--gray z-index">
+                        <div class="page__cell">
+                            <section class="section section--product3">
+                                <h3 class="section__title title title--h3 text-center">Похожие товары</h3>
+                                <div class="product">
+                                    <div class="product__wrapper">
+                                        <div class="swiper-container swiper-container--product carousel">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="product__item product__item--carousel">
+                                                        <div class="">
+                                                            <div class="product__inner">
+                                                                <div class="product__header">
+                                                                    <a class="product__link" href="#">
+                                                                        <img class="product__picture" src="pic/product-1.jpg" alt="Гаражные секционные ворота RenoMatic 2750 x 2250">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="product__body">
+                                                                    <h6 class="product__title">
+                                                                        <a class="product__title-link" href="#">Гаражные секционные ворота RenoMatic 2750 x 2250</a>
+                                                                    </h6>
+                                                                    <div class="product__price-add">
+                                                                        <p class="product__price bold">51 800 руб.</p>
+                                                                        <a class="product__add" href="#">
+                                                                            <span class="product__add-plus">+</span>
+                                                                            <img class="product__add-icon" src="img/svg/cart.svg" alt="В корзину">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="product__hidden">
+                                                                        <ul class="product__data">
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Ширина проема: 2750</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Высота проема: 2250</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Страна производства: Германия</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Тип: Hormann RenoMatic</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Акция: Участвуют</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <ul class="product__buttons">
+                                                                            <li class="product__button">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid btn--icon" href="#">
+                                                                                    <img class="btn__icon" src="img/svg/favorite.svg" alt="favorite">
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="product__button product__button--buy">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid" href="#">Купить в 1 клик</a>
+                                                                            </li>
+                                                                            <li class="product__button">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid btn--icon" href="#">
+                                                                                    <img class="btn__icon" src="img/svg/bookmarks.svg" alt="bookmarks">
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product__item product__item--carousel">
+                                                        <div class="product__block product__block--carousel">
+                                                            <div class="product__inner">
+                                                                <div class="product__header">
+                                                                    <a class="product__link" href="#">
+                                                                        <img class="product__picture" src="pic/product-1.jpg" alt="Гаражные секционные ворота RenoMatic 2750 x 2250">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="product__body">
+                                                                    <h6 class="product__title">
+                                                                        <a class="product__title-link" href="#">Гаражные секционные ворота RenoMatic 2750 x 2250</a>
+                                                                    </h6>
+                                                                    <div class="product__price-add">
+                                                                        <p class="product__price bold">51 800 руб.</p>
+                                                                        <a class="product__add" href="#">
+                                                                            <span class="product__add-plus">+</span>
+                                                                            <img class="product__add-icon" src="img/svg/cart.svg" alt="В корзину">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="product__hidden">
+                                                                        <ul class="product__data">
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Ширина проема: 2750</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Высота проема: 2250</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Страна производства: Германия</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Тип: Hormann RenoMatic</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Акция: Участвуют</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <ul class="product__buttons">
+                                                                            <li class="product__button">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid btn--icon" href="#">
+                                                                                    <img class="btn__icon" src="img/svg/favorite.svg" alt="favorite">
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="product__button product__button--buy">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid" href="#">Купить в 1 клик</a>
+                                                                            </li>
+                                                                            <li class="product__button">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid btn--icon" href="#">
+                                                                                    <img class="btn__icon" src="img/svg/bookmarks.svg" alt="bookmarks">
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product__item product__item--carousel">
+                                                        <div class="product__block product__block--carousel">
+                                                            <div class="product__inner">
+                                                                <div class="product__header">
+                                                                    <a class="product__link" href="#">
+                                                                        <img class="product__picture" src="pic/product-1.jpg" alt="Гаражные секционные ворота RenoMatic 2750 x 2250">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="product__body">
+                                                                    <h6 class="product__title">
+                                                                        <a class="product__title-link" href="#">Гаражные секционные ворота RenoMatic 2750 x 2250</a>
+                                                                    </h6>
+                                                                    <div class="product__price-add">
+                                                                        <p class="product__price bold">51 800 руб.</p>
+                                                                        <a class="product__add" href="#">
+                                                                            <span class="product__add-plus">+</span>
+                                                                            <img class="product__add-icon" src="img/svg/cart.svg" alt="В корзину">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="product__hidden">
+                                                                        <ul class="product__data">
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Ширина проема: 2750</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Высота проема: 2250</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Страна производства: Германия</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Тип: Hormann RenoMatic</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Акция: Участвуют</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <ul class="product__buttons">
+                                                                            <li class="product__button">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid btn--icon" href="#">
+                                                                                    <img class="btn__icon" src="img/svg/favorite.svg" alt="favorite">
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="product__button product__button--buy">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid" href="#">Купить в 1 клик</a>
+                                                                            </li>
+                                                                            <li class="product__button">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid btn--icon" href="#">
+                                                                                    <img class="btn__icon" src="img/svg/bookmarks.svg" alt="bookmarks">
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product__item product__item--carousel">
+                                                        <div class="product__block product__block--carousel">
+                                                            <div class="product__inner">
+                                                                <div class="product__header">
+                                                                    <a class="product__link" href="#">
+                                                                        <img class="product__picture" src="pic/product-1.jpg" alt="Гаражные секционные ворота RenoMatic 2750 x 2250">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="product__body">
+                                                                    <h6 class="product__title">
+                                                                        <a class="product__title-link" href="#">Гаражные секционные ворота RenoMatic 2750 x 2250</a>
+                                                                    </h6>
+                                                                    <div class="product__price-add">
+                                                                        <p class="product__price bold">51 800 руб.</p>
+                                                                        <a class="product__add" href="#">
+                                                                            <span class="product__add-plus">+</span>
+                                                                            <img class="product__add-icon" src="img/svg/cart.svg" alt="В корзину">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="product__hidden">
+                                                                        <ul class="product__data">
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Ширина проема: 2750</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Высота проема: 2250</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Страна производства: Германия</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Тип: Hormann RenoMatic</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Акция: Участвуют</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <ul class="product__buttons">
+                                                                            <li class="product__button">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid btn--icon" href="#">
+                                                                                    <img class="btn__icon" src="img/svg/favorite.svg" alt="favorite">
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="product__button product__button--buy">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid" href="#">Купить в 1 клик</a>
+                                                                            </li>
+                                                                            <li class="product__button">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid btn--icon" href="#">
+                                                                                    <img class="btn__icon" src="img/svg/bookmarks.svg" alt="bookmarks">
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product__item product__item--carousel">
+                                                        <div class="product__block product__block--carousel">
+                                                            <div class="product__inner">
+                                                                <div class="product__header">
+                                                                    <a class="product__link" href="#">
+                                                                        <img class="product__picture" src="pic/product-1.jpg" alt="Гаражные секционные ворота RenoMatic 2750 x 2250">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="product__body">
+                                                                    <h6 class="product__title">
+                                                                        <a class="product__title-link" href="#">Гаражные секционные ворота RenoMatic 2750 x 2250</a>
+                                                                    </h6>
+                                                                    <div class="product__price-add">
+                                                                        <p class="product__price bold">51 800 руб.</p>
+                                                                        <a class="product__add" href="#">
+                                                                            <span class="product__add-plus">+</span>
+                                                                            <img class="product__add-icon" src="img/svg/cart.svg" alt="В корзину">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="product__hidden">
+                                                                        <ul class="product__data">
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Ширина проема: 2750</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Высота проема: 2250</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Страна производства: Германия</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Тип: Hormann RenoMatic</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Акция: Участвуют</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <ul class="product__buttons">
+                                                                            <li class="product__button">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid btn--icon" href="#">
+                                                                                    <img class="btn__icon" src="img/svg/favorite.svg" alt="favorite">
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="product__button product__button--buy">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid" href="#">Купить в 1 клик</a>
+                                                                            </li>
+                                                                            <li class="product__button">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid btn--icon" href="#">
+                                                                                    <img class="btn__icon" src="img/svg/bookmarks.svg" alt="bookmarks">
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="product__item product__item--carousel">
+                                                        <div class="product__block product__block--carousel">
+                                                            <div class="product__inner">
+                                                                <div class="product__header">
+                                                                    <a class="product__link" href="#">
+                                                                        <img class="product__picture" src="pic/product-1.jpg" alt="Гаражные секционные ворота RenoMatic 2750 x 2250">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="product__body">
+                                                                    <h6 class="product__title">
+                                                                        <a class="product__title-link" href="#">Гаражные секционные ворота RenoMatic 2750 x 2250</a>
+                                                                    </h6>
+                                                                    <div class="product__price-add">
+                                                                        <p class="product__price bold">51 800 руб.</p>
+                                                                        <a class="product__add" href="#">
+                                                                            <span class="product__add-plus">+</span>
+                                                                            <img class="product__add-icon" src="img/svg/cart.svg" alt="В корзину">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="product__hidden">
+                                                                        <ul class="product__data">
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Ширина проема: 2750</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Высота проема: 2250</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Страна производства: Германия</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Тип: Hormann RenoMatic</span>
+                                                                            </li>
+                                                                            <li class="product__data-item">
+                                                                                <span class="product__data-span">Акция: Участвуют</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <ul class="product__buttons">
+                                                                            <li class="product__button">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid btn--icon" href="#">
+                                                                                    <img class="btn__icon" src="img/svg/favorite.svg" alt="favorite">
+                                                                                </a>
+                                                                            </li>
+                                                                            <li class="product__button product__button--buy">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid" href="#">Купить в 1 клик</a>
+                                                                            </li>
+                                                                            <li class="product__button">
+                                                                                <a class="product__btn btn btn--md btn--tertiary btn--fluid btn--icon" href="#">
+                                                                                    <img class="btn__icon" src="img/svg/bookmarks.svg" alt="bookmarks">
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="disc disc--gray disc--product in-mobile-flex in-pc-991-flex" id="disc-product"></div>
+                                            <div class="prev prev--default prev--product in-pc"></div>
+                                            <div class="next next--default next--product in-pc"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="page__row page__row--banner" style="background-image: url(img/banner-bg.jpg);">
+                        <div class="page__cell">
+                            <div class="banner">
+                                <div class="banner__wrapper">
+                                    <div class="banner__image in-pc">
+                                        <img class="banner__picture" src="img/banner-image.png" alt="banner-image">
+                                    </div>
+                                    <div class="banner__image in-mobile">
+                                        <img class="banner__picture" src="img/banner-image-2.png" alt="banner-image">
+                                    </div>
+                                    <div class="banner__content">
+                                        <h3 class="banner__title title title--h3">Оставьте заявку <br>на расчет стоимости ворот </h3>
+                                        <a class="banner__btn btn btn--default btn--md btn--shadow btn--min-width-210" href="#">Заказать расчет</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__row page__row--footer">
+                <div class="page__cell page__cell--fluid">
+                    <div class="page__row page__row--footer-top">
+                        <div class="page__cell">
+                            <div class="footer footer-top">
+                                <div class="footer__row footer__row--navs-subscription">
+                                    <div class="footer__cell footer__cell--navs in-pc">
+                                        <div class="footer__navs">
+                                            <nav class="footer__nav">
+                                                <ul class="footer__nav-menu">
+                                                    <li class="footer__nav-item">
+                                                        <a class="footer__nav-link" href="#">О компании</a>
+                                                    </li>
+                                                    <li class="footer__nav-item">
+                                                        <a class="footer__nav-link" href="#">Оплата</a>
+                                                    </li>
+                                                    <li class="footer__nav-item">
+                                                        <a class="footer__nav-link" href="#">Доставка</a>
+                                                    </li>
+                                                    <li class="footer__nav-item">
+                                                        <a class="footer__nav-link" href="#">Вопрос-ответ</a>
+                                                    </li>
+                                                    <li class="footer__nav-item">
+                                                        <a class="footer__nav-link" href="#">Отзывы</a>
+                                                    </li>
+                                                    <li class="footer__nav-item">
+                                                        <a class="footer__nav-link" href="#">Акции</a>
+                                                    </li>
+                                                    <li class="footer__nav-item">
+                                                        <a class="footer__nav-link" href="#">Контакты</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                            <nav class="footer__nav">
+                                                <ul class="footer__nav-menu">
+                                                    <li class="footer__nav-item">
+                                                        <a class="footer__nav-link" href="#">Ворота</a>
+                                                    </li>
+                                                    <li class="footer__nav-item">
+                                                        <a class="footer__nav-link" href="#">Рольставни</a>
+                                                    </li>
+                                                    <li class="footer__nav-item">
+                                                        <a class="footer__nav-link" href="#">Шлагбауны</a>
+                                                    </li>
+                                                    <li class="footer__nav-item">
+                                                        <a class="footer__nav-link" href="#">Автоматика для ворот</a>
+                                                    </li>
+                                                    <li class="footer__nav-item">
+                                                        <a class="footer__nav-link" href="#">Комплектующие для ворот</a>
+                                                    </li>
+                                                    <li class="footer__nav-item">
+                                                        <a class="footer__nav-link" href="#">Ремонт</a>
+                                                    </li>
+                                                    <li class="footer__nav-item">
+                                                        <a class="footer__nav-link" href="#">Наши работы</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <div class="footer__cell footer__cell--subscription">
+                                        <div class="subscription">
+                                            <div class="subscription__wrapper">
+                                                <h6 class="subscription__title title title--h6">Подпишитесь на рассылку новостей:</h6>
+                                                <form class="subscription__form" action="#">
+                                                    <input class="subscription__input" type="email" required placeholder="Ваша почта:">
+                                                    <button class="subscription__btn" type="submit"></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__row page__row--footer-middle">
+                        <div class="page__cell">
+                            <div class="footer footer--middle">
+                                <div class="footer__row footer__row--blocks-contact">
+                                    <div class="footer__cell footer__cell--blocks">
+                                        <ul class="footer__blocks">
+                                            <li class="footer__block">
+                                                <header class="footer__block-header" data-target=".footer__block-body">
+                                                    <h5 class="footer__title title title--h5">Ворота</h5>
+                                                </header>
+                                                <div class="footer__block-body">
+                                                    <div class="footer__block-inner">
+                                                        <ul class="footer__menu">
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Гаражные ворота</a>
+                                                            </li>
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Промышленные ворота</a>
+                                                            </li>
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Панорамные  ворота</a>
+                                                            </li>
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Въездные  ворота</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="footer__block">
+                                                <header class="footer__block-header" data-target=".footer__block-body">
+                                                    <h5 class="footer__title title title--h5">Автоматика для ворот</h5>
+                                                </header>
+                                                <div class="footer__block-body">
+                                                    <div class="footer__block-inner">
+                                                        <ul class="footer__menu">
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Автоматика для откатных ворот</a>
+                                                            </li>
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Автоматика для распашных ворот</a>
+                                                            </li>
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Автоматика для распашных ворот</a>
+                                                            </li>
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">
+                                                                    Автоматика для промышленых ворот</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="footer__block">
+                                                <header class="footer__block-header" data-target=".footer__block-body">
+                                                    <h5 class="footer__title title title--h5">Роллетные системы</h5>
+                                                </header>
+                                                <div class="footer__block-body">
+                                                    <div class="footer__block-inner">
+                                                        <ul class="footer__menu">
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Рольставни</a>
+                                                            </li>
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Роллетные ворота</a>
+                                                            </li>
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Роллетные решетки</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="footer__block">
+                                                <header class="footer__block-header" data-target=".footer__block-body">
+                                                    <h5 class="footer__title title title--h5">Перегрузочная система</h5>
+                                                </header>
+                                                <div class="footer__block-body">
+                                                    <div class="footer__block-inner">
+                                                        <ul class="footer__menu">
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Уравнительные платформы</a>
+                                                            </li>
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Герметизаторы проема</a>
+                                                            </li>
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Перегрузочные площадки</a>
+                                                            </li>
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Перегрузочные тамбуры</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="footer__block">
+                                                <header class="footer__block-header" data-target=".footer__block-body">
+                                                    <h5 class="footer__title title title--h5">Шлагбаумы</h5>
+                                                </header>
+                                                <div class="footer__block-body">
+                                                    <div class="footer__block-inner">
+                                                        <ul class="footer__menu">
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Гаражные ворота</a>
+                                                            </li>
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Промышленные ворота</a>
+                                                            </li>
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Панорамные  ворота</a>
+                                                            </li>
+                                                            <li class="footer__menu-item">
+                                                                <a class="footer__menu-link" href="#">Въездные  ворота</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer__cell footer__cell--contact">
+                                        <ul class="footer__blocks">
+                                            <li class="footer__block footer__block--fluid">
+                                                <header class="footer__block-header in-mobile" data-target=".footer__block-body">
+                                                    <h5 class="footer__title title title--h5">Контакты</h5>
+                                                </header>
+                                                <div class="footer__block-body">
+                                                    <div class="footer__block-inner">
+                                                        <div class="footer__contact">
+                                                            <h6 class="footer__contact-title">Консультация и продажа:</h6>
+                                                            <ul class="footer__contact-items">
+                                                                <li class="footer__contact-item footer__contact-item--tel">
+                                                                    <a class="footer__contact-link footer__contact-link--tel bold" href="tel:+380988111165">+38 098 811-11-65</a>
+                                                                </li>
+                                                                <li class="footer__contact-item footer__contact-item--time">
+                                                                    <p class="footer__contact-time">с 10 до 19 без выходных</p>
+                                                                </li>
+                                                                <li class="footer__contact-item footer__contact-item--email">
+                                                                    <a class="footer__contact-link" href="mailto:support@nazvanie.com">Support@nazvanie.com</a>
+                                                                </li>
+                                                            </ul>
+                                                            <a class="footer__contact-btn btn btn--fourth btn--md btn--shadow btn--min-width" href="#">Обратный звонок</a>
+                                                            <h6 class="footer__contact-title">Как нас найти:</h6>
+                                                            <ul class="footer__contact-items">
+                                                                <li class="footer__contact-item footer__contact-item--loc">
+                                                                    <p class="footer__contact-text">г. Ростов на Дону,<br> улица Степная 54, офис 43</p>
+                                                                </li>
+                                                            </ul>
+                                                            <h6 class="footer__contact-title footer__contact-title--social">Наши соцсети:</h6>
+                                                            <div class="footer__contact-social social">
+                                                                <ul class="social__items">
+                                                                    <li class="social__item">
+                                                                        <a class="social__link social__link--vk" href="#" target="_blank">
+                                                                            <img class="social__icon" alt="vk" src="img/svg/vk.svg">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="social__item">
+                                                                        <a class="social__link social__link--fb" href="#" target="_blank">
+                                                                            <img class="social__icon" alt="fb" src="img/svg/fb.svg">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="social__item">
+                                                                        <a class="social__link social__link--yt" href="#" target="_blank">
+                                                                            <img class="social__icon" alt="yt" src="img/svg/yt.svg">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="social__item">
+                                                                        <a class="social__link social__link--in" href="#" target="_blank">
+                                                                            <img class="social__icon" alt="in" src="img/svg/in.svg">
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__row page__row--footer-bottom">
+                        <div class="page__cell">
+                            <div class="footer footer--bottom">
+                                <div class="footer__row footer__row--align-center">
+                                    <div class="footer__cell footer__cell--payments">
+                                        <img class="footer__payments" src="img/payments.png" alt="payments">
+                                    </div>
+                                    <div class="footer__cell footer__cell--copy">
+                                        <p class="footer__copy">&copy; 2010—2020 | Все права защищены</p>
+                                    </div>
+                                    <div class="footer__cell footer__cell--privacy">
+                                        <a class="footer__privacy" href="#">Политика конфиденциальности</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  ==== Load CSS ==== -->
+        <script>
+            function loadCSS(hf) {
+                var ms=document.createElement("link");ms.rel="stylesheet";
+                ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
+            }
+            loadCSS("libs/jquery-ui/jquery-ui.min.css");
+            loadCSS("libs/jquery.scrollbar/jquery.scrollbar.css");
+            loadCSS("libs/swiper/swiper.min.css");
+            loadCSS("libs/aos/aos.css");
+            loadCSS("libs/jquery.fancybox/jquery.fancybox.min.css");
+        </script>
+        <!--  ==== Load Scripts ==== -->
+        <script>var scr = {"scripts":[
+            {"src" : "js/jquery-3.4.1.min.js", "async" : false},
+            {"src" : "libs/jquery-ui/jquery-ui.min.js", "async" : false},
+            {"src" : "libs/jquery.scrollbar/jquery.scrollbar.min.js", "async" : false},
+            {"src" : "libs/swiper/swiper.min.js", "async" : false},
+            {"src" : "libs/aos/aos.js", "async" : false},
+            {"src" : "libs/jquery.fancybox/jquery.fancybox.min.js", "async" : false},
+            {"src" : "libs/validate/jquery.validate.min.js", "async" : false},
+            {"src" : "libs/mask/jquery.mask.min.js", "async" : false},
+            {"src" : "js/common.js", "async" : false},
+            ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+        </script>
+    </body>
+</html>
